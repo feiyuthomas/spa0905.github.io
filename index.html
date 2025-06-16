@@ -83,18 +83,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   <main> 
    <div id="visual"> 
-    <!-- <img src="images/home1.png" alt="">  -->
     <img src="images/323.gif" alt=""> 
-    <div class="data">
-      <p class="open" style="text-align: left; color: rgb(248, 3, 3); font-size: 60px; font-weight: bolder">  
-        <span class="label" style="font-weight: bolder">優安.</span>  
-        <!-- <strong>TEL. 070-8351-7765</strong> -->
-     </p>
-      <!-- <p class="open" style="text-align: left; color: rgb(0, 0, 0);">
-          <span class="label">OPEN.</span>11:00〜24:00
-      </p> -->
+    <div class="data" style="position: relative; display: flex; justify-content: flex-end;">
+      <!-- 竖排店名容器，使用绝对定位固定在右侧 -->
+      <p class="shop-name" style="
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        writing-mode: vertical-rl;
+        text-align: center;
+        color: rgb(248, 3, 3);
+        font-family: 'Microsoft YaHei', Arial, sans-serif;
+        font-size: 48px;
+        font-weight: normal;
+        letter-spacing: 2px;
+      ">
+        <span class="label">優安.</span>  
+      </p>
+      
       <p class="tel" style="text-align: left; color:rgb(0, 0, 0) ;font-size: 50px">
-        <!-- <strong>TEL. 070-8351-7765</strong> -->
           <span class="label" style="font-weight: bolder">☎️08089095448</span>
       </p>
   </div>
