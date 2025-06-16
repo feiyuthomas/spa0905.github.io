@@ -82,46 +82,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </header> 
   
   <main> 
-  <div id="visual" style="position: relative; overflow: visible;">
+ <div id="visual" style="position: relative; overflow: visible;">
     <img src="images/323.gif" alt="" style="display: block; max-width: 100%;">
     <div class="data" style="position: absolute; top: 0; right: 0; width: 100%; height: 100%;">
-      <!-- 竖排店名容器，覆盖图片右侧 -->
-<p class="shop-name" style="
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  writing-mode: vertical-rl;
-  text-align: center;
-  font-family: 'KaiTi', 'STKaiti', 'AR PL UKai CN', serif; /* 使用楷体字体 */
-  font-size: 72px; /* 适当增大字体 */
-  font-weight: bold;
-  color: #ff3366; /* 鲜艳红色 */
-  letter-spacing: 5px;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 20px 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-">
-  <span class="label">優安.</span>  
-</p>
-      
-      <p class="tel" style="
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        text-align: left;
-        color: rgb(0, 0, 0);
-        font-size: 42px;
-        z-index: 10;
-        font-family: 'Microsoft YaHei', Arial, sans-serif;
-      ">
-          <span class="label" style="font-weight: bolder">☎️08089095448</span>
-      </p>
-  </div>
-   </div>   
+        <!-- 竖排店名容器 -->
+        <p class="shop-name" style="
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            writing-mode: vertical-rl;
+            white-space: nowrap;
+            word-break: keep-all;
+            font-family: 'KaiTi', serif;
+            font-size: 72px;
+            font-weight: bold;
+            color: #ff3366;
+            letter-spacing: 5px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px 15px;
+            border-radius: 15px;
+        ">
+            <span class="label">優安.</span>  
+        </p>
+        
+        <!-- 电话信息 -->
+        <p class="tel" style="
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            font-size: 42px;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        ">
+            <span class="label" style="font-weight: bolder">☎️08089095448</span>
+        </p>
+    </div>
+</div>
+
+<style>
+/* 媒体查询：屏幕宽度小于768px时生效 */
+@media (max-width: 768px) {
+    .shop-name {
+        font-size: 56px; /* 小屏幕上减小字体 */
+        padding: 15px 10px; /* 可选：同时调整内边距 */
+    }
+    
+    .tel {
+        font-size: 32px; /* 同步调整电话字体大小 */
+    }
+}
+</style>
    <p class="comment"></p> 
    <section id="event"> 
     <!-- <h2>店舗からのお知らせ</h2>  -->
